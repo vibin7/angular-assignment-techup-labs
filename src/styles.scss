@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.drop-zone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #007bff;
+  }
+  
+  .drop-zone:hover {
+    background-color: #f8f9fa;
+  }
+
+  .modal-content {
+    border: none;
+    padding: 0px 10px;
+  }
+  .asterisk {
+    color: #dc3545;
+  }
+  
+  .text-danger {
+    color: #f02848;
+  }

@@ -1,0 +1,8 @@
+<div class="container mt-4">
+    <div class="d-flex flex-column align-items-end mb-3">
+      <button (click)="addPin()" class="btn btn-primary">Add Pin</button>
+    </div>
+  
+    <h3 class="mb-4">List of pins</h3>
+    <app-list [headers]="headers" [tableData]="tableData" ></app-list>
+  </div>

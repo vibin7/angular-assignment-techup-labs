@@ -1,0 +1,19 @@
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th *ngFor="let header of headers" scope="col">{{ header.label }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData">
+        <td *ngFor="let header of headers">
+          <ng-container *ngIf="header.type === 'text'">{{ row[header.key] }}</ng-container>
+          <ng-container *ngIf="header.type === 'image'">
+            <img [src]="row[header.key]" alt="Image" class="img-thumbnail" width="100">
+          </ng-container>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
