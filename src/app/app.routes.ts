@@ -11,12 +11,12 @@ export const routes: Routes = [
         {
           path: 'pins', // Route for ListComponent
           loadComponent: () =>
-            import('./components/pins-list/pins-list.component').then((m) => m.PinsListComponent),
+            import('./containers/pins-list/pins-list.component').then((m) => m.PinsListComponent),
         },
         {
             path: 'customer', // Route for ListComponent
             loadComponent: () =>
-              import('./components/customer-list/customer-list.component').then((m) => m.CustomerListComponent),
+              import('./containers/customer-list/customer-list.component').then((m) => m.CustomerListComponent),
           },
       ],
     },

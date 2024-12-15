@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DynamicFormModalComponent } from '../dynamic-form-modal/dynamic-form-modal.component';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { NgForOf } from '@angular/common';
 import { ApiConnectService } from '../../shared/api-connect.service';
@@ -7,7 +6,8 @@ import { countries, listOfPins } from '../../shared/data';
 import { customerHeaders, FORM_TYPE } from '../../shared/constants';
 import { LocalStorageService } from '../../shared/local-storage.service';
 import { SharedService } from '../../shared/shared.service';
-import { ListComponent } from '../list/list.component';
+import { ListComponent } from '../../components/list/list.component';
+import { DynamicFormModalComponent } from '../../components/dynamic-form-modal/dynamic-form-modal.component';
 
 @Component({
   selector: 'app-customer-list',
